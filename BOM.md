@@ -12,15 +12,14 @@
 
 | Part | What it's for | Qty | Unit | Total | Vendor |
 | --- | --- | --- | --- | --- | --- |
-| XIAO-ESP32-C3 | Seeed Studio XIAO ESP32-C3 module | 1 | $5.50 | $5.50 | AliExpress (Seeed Studio official store) |
 | DHT11 | DHT11 temperature and humidity sensor (bare 3/4-pin) | 1 | $1.00 | $1.00 | AliExpress |
 | 0.96in OLED SSD1306 I2C | 0.96in 128x64 I2C OLED, 4-pin | 1 | $1.80 | $1.80 | AliExpress |
 | MPU6050 GY-521 | MPU6050 accel/gyro breakout | 1 | $1.60 | $1.60 | AliExpress |
 | MX-style switch | Cherry MX compatible switch | 2 | $0.20 | $0.40 | AliExpress |
 | 10k | DHT11 data pull-up, 1/4W | 1 | $0.05 | $0.05 | AliExpress |
 | MX keycap | Keycaps for SW1/SW2 (optional) | 2 | $0.40 | $0.80 | AliExpress |
-| **Parts subtotal** | — | — | — | **$11.15** | — |
+| **Parts subtotal** | — | — | — | **$5.65** | — |
 | **Tax & shipping** | — | — | — | **$0.00** | — |
-| **Total** | — | — | — | **$11.15** | — |
+| **Total** | — | — | — | **$5.65** | — |
 
-$18.85 left of the tier's funding.
+$24.35 left of the tier's funding.
