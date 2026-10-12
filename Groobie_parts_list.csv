@@ -1,0 +1,14 @@
+Ref,Part,Value / Spec,Footprint,Qty,Notes
+U2,Seeed Studio XIAO ESP32-C3,ESP32-C3 dev board,XIAO-ESP32 DIP/SMD (7 pins per side),1,Solder on 2x 7-pin headers or castellated edges
+U1,DHT11 temperature + humidity sensor,3-pin or 4-pin module/bare,Aosong DHT11 5.5x12.0 P2.54mm,1,Data pin goes to D1
+J1,0.96in OLED display SSD1306 I2C,128x64 4-pin (GND VCC SCL SDA),1x04 2.54mm header,1,Check pin order matches J1 before soldering
+J2,MPU6050 breakout (GY-521),6-axis accel/gyro I2C,1x08 2.54mm header,1,Only SDA/SCL/VCC/GND are used
+SW1,MX-style mechanical switch,Cherry MX compatible (any switch),Cherry MX 1.00u PCB mount,1,Button 1
+SW2,MX-style mechanical switch,Cherry MX compatible (any switch),Cherry MX 1.00u PCB mount,1,Button 2
+R1,Resistor,10k 1/4W,Axial DIN0204 P7.62mm,1,DHT11 data pull-up
+-,Keycap (MX),any 1u,-,2,Optional for SW1/SW2
+-,Pin header 1x04 male or female 2.54mm,-,-,1,For OLED (J1)
+-,Pin header 1x08 male or female 2.54mm,-,-,1,For MPU6050 (J2); 1x06 also works if cut
+-,Pin header 1x07 2.54mm,-,-,2,For XIAO if not soldering direct
+-,USB-C cable,data capable,-,1,For flashing and power
+-,Solder + flux,-,-,1,
