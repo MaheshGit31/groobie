@@ -6,3 +6,5 @@
 "SW1,SW2","Outemu 3-pin MX switch (red)","Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB","1","2.38","2.38","AliExpress (SZ suhv Store)","10-pack of Cherry MX compatible switches, 2 used"
 "R1","10k","Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal","1","1.10","1.10","AliExpress (TriArk Electronic Components Store)","100-pack 1/4W 1% metal film resistors (10K), 1 used"
 "-","MX keycaps","-","1","3.07","3.07","AliExpress (SZElectronic Store)","10-pack blank 1U keycaps, 2 used (optional)"
+"-","Groobie custom PCB","groobie.kicad_pcb (gerbers/)","1","TBD","TBD","PCB fab (e.g. JLCPCB)","Custom ghost-shaped 2-layer PCB, gerbers in /gerbers (enter actual quote)"
+"-","3D printed case","groobie_case.step","1","TBD","TBD","Self-printed","Tray, lid, logo, eyes and blush inlays, printed in PLA/PETG"
