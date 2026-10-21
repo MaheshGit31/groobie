@@ -16,6 +16,14 @@ A tiny ghost-shaped desk pet on a custom ghost PCB around a Seeed XIAO ESP32-C3,
 
 <img width="1462" height="861" alt="image" src="https://github.com/user-attachments/assets/a3d70ac1-24f6-481b-8077-2cc38b8b330a" />
 
+## 3D printed case
+
+Groobie lives in a two-part 3D printed case (tray and lid) with the PCB sitting on a ledge inside. The lid has cutouts for the OLED and both switches, vents for the DHT11, and a colored logo, eyes and blush on top. The editable CAD is `groobie_case.step`.
+
+![Groobie case, assembled](renders/groobie_render_hero.png)
+
+![Groobie case, exploded: lid lifted off the tray](renders/groobie_render_exploded.png)
+
 ## How to use Groobie
 
 Groobie lives on the OLED. He wanders back and forth along the bottom of the screen and
@@ -30,7 +38,7 @@ his joy, energy and fullness stats are saved, so he remembers them after power-o
 | **Button 2** (wired to D3) | Shows or hides the stats screen (joy, energy, fullness, temperature, humidity). It never changes Groobie, it only lets you peek. |
 | **Shake Groobie** (outside the menu) | Cheers him up (joy +5, energy -2, fullness -1) and wakes him if he is napping. |
 
-### The menu
+### The radial menu
 
 Press Button 1, hold Groobie however is comfortable (the tilt is calibrated to how you hold
 him at that moment), tilt toward an action, then press Button 1 again to confirm.
@@ -40,7 +48,7 @@ If the ball is still in the middle, nothing is selected and the menu stays open.
 |---|---|---|
 | Top | NAP | Groobie sleeps for 48 seconds with floating Zs. Restores energy. |
 | Right | DANCE | Groobie sways and hops three loops with hearts and music notes. Big joy boost, costs energy. |
-| Bottom | SNACK | Groobie wiggles and jumps. |
+| Bottom | SNACK | Groobie wiggles and jumps. Raises fullness. |
 | Left | PET | Groobie jumps and sends up hearts. Raises joy. |
 
 Stats are 0 to 100 and only change when you pick an action or shake him. Nothing drains
@@ -48,7 +56,7 @@ while he sits on your desk.
 
 ### Move reminder
 
-if you have not touched or shaken him for **30 minutes**, he starts
+Groobie's real job: if you have not touched or shaken him for **30 minutes**, he starts
 bouncing on the spot and shows a **MOVE!** speech bubble above his head. That is your cue
 to stand up, stretch or walk around. To say "ok, I moved", press either button or shake
 him, and the reminder resets for another 30 minutes. He does not nag while napping.
@@ -104,6 +112,7 @@ The OLED is at I2C address 0x3C and the MPU6050 at 0x68.
 | `Groobie.ino` | Firmware (Arduino, one file) |
 | `bom.csv` | Bill of materials |
 | `groobie_case.step` | Editable CAD of the full case with PCB and parts |
+| `renders/` | 3D renders of the case |
 
 ## Are you using AI?
 
