@@ -33,12 +33,12 @@ his joy, energy and fullness stats are saved, so he remembers them after power-o
 
 | Control | What it does |
 |---|---|
-| **Button 1** (wired to D2) | Opens the radial menu. Press it again in the menu to confirm your choice. |
+| **Button 1** (wired to D2) | Opens the Menu. Press it again in the menu to confirm your choice. |
 | **Tilt Groobie** (while the menu is open) | The MPU6050 works like an air mouse. A ball on screen follows your tilt, and tilting toward a side highlights that action. |
 | **Button 2** (wired to D3) | Shows or hides the stats screen (joy, energy, fullness, temperature, humidity). It never changes Groobie, it only lets you peek. |
 | **Shake Groobie** (outside the menu) | Cheers him up (joy +5, energy -2, fullness -1) and wakes him if he is napping. |
 
-### The radial menu
+### The Menu
 
 Press Button 1, hold Groobie however is comfortable (the tilt is calibrated to how you hold
 him at that moment), tilt toward an action, then press Button 1 again to confirm.
