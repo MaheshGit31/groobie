@@ -1,2 +1,13 @@
 Item,Qty,Supplier,Cost/item,Total Cost,link
+XIAO-ESP32-C3,1,AliExpress (FMchip AE Store),$15.99,$15.99,
+DHT11,1,AliExpress (Simple Robot Store),$1.14,$1.14,
+0.96in OLED SSD1306 I2C,1,AliExpress (DIY-Victor Store),$2.37,$2.37,
+MPU6050 GY-521,1,AliExpress (Nextronics Store),$3.85,$3.85,
+Outemu 3-pin MX switch (red),1,AliExpress (SZ suhv Store),$2.39,$2.39,
+10k,1,AliExpress (LXQY Store),$4.05,$4.05,
+MX keycaps,1,AliExpress (SZElectronic Store),$1.09,$1.09,
+Groobie custom PCB,1,PCB fab (e.g. JLCPCB),$0.00,$0.00,
+3D printed case,1,Self-printed,$0.00,$0.00,
+Parts subtotal (electronics only),1,-,$0.00,$0.00,
+Parts total including shipping,1,-,$0.00,$0.00,
 Estimated total shipping,1,,,$0.00,
