@@ -29,16 +29,18 @@ Groobie lives in a two-part 3D printed case (tray and lid) with the PCB sitting 
 Groobie lives on the OLED. He wanders back and forth along the bottom of the screen and
 his joy, energy and fullness stats are saved, so he remembers them after power-off.
 
+**The short version:** you interact with Groobie by pressing buttons, tilting him and shaking him (no diamonds needed, though snacks are welcome). Press Button 1 to open a four-way menu, tilt the whole board toward NAP, DANCE, SNACK or PET to aim at one, then press Button 1 again to pick it and watch him react on the screen. Press Button 2 any time to peek at his joy, energy and fullness bars plus the room temperature and humidity. Give the board a shake to cheer him up or wake him from a nap. If you ignore him for 30 minutes he bounces around and shows a "MOVE!" bubble to tell you to get up and stretch.
+
 ### Controls
 
 | Control | What it does |
 |---|---|
-| **Button 1** (wired to D2) | Opens the Menu. Press it again in the menu to confirm your choice. |
+| **Button 1** (wired to D2) | Opens the radial menu. Press it again in the menu to confirm your choice. |
 | **Tilt Groobie** (while the menu is open) | The MPU6050 works like an air mouse. A ball on screen follows your tilt, and tilting toward a side highlights that action. |
 | **Button 2** (wired to D3) | Shows or hides the stats screen (joy, energy, fullness, temperature, humidity). It never changes Groobie, it only lets you peek. |
 | **Shake Groobie** (outside the menu) | Cheers him up (joy +5, energy -2, fullness -1) and wakes him if he is napping. |
 
-### The Menu
+### The radial menu
 
 Press Button 1, hold Groobie however is comfortable (the tilt is calibrated to how you hold
 him at that moment), tilt toward an action, then press Button 1 again to confirm.
@@ -70,16 +72,18 @@ Full list in [`bom.csv`](bom.csv).
 
 | Ref | Part | Qty | Unit (USD) | Total (USD) | Vendor |
 |---|---|---|---|---|---|
-| U2 | Seeed Studio XIAO ESP32-C3 | 1 | 15.17 | 15.17 | AliExpress (FMchip AE Store) |
-| J2 | MPU6050 GY-521 accel/gyro breakout | 1 | 3.86 | 3.86 | AliExpress (Nextronics Store) |
-| - | MX keycaps, 10-pack blank 1U (2 used, optional) | 1 | 3.07 | 3.07 | AliExpress (SZElectronic Store) |
-| SW1, SW2 | Outemu 3-pin MX switch, red, 10-pack (2 used) | 1 | 2.38 | 2.38 | AliExpress (SZ suhv Store) |
+| U2 | Seeed Studio XIAO ESP32-C3 | 1 | 15.99 | 15.99 | AliExpress (FMchip AE Store) |
+| J2 | MPU6050 GY-521 accel/gyro breakout | 1 | 3.85 | 3.85 | AliExpress (Nextronics Store) |
+| - | MX keycaps, 10-pack blank 1U (2 used, optional) | 1 | 1.09 | 1.09 | AliExpress (SZElectronic Store) |
+| SW1, SW2 | Outemu 3-pin MX switch, red, 10-pack (2 used) | 1 | 2.39 | 2.39 | AliExpress (SZ suhv Store) |
 | U1 | DHT11 temperature and humidity sensor | 1 | 1.14 | 1.14 | AliExpress (Simple Robot Store) |
-| R1 | 10k resistor, 1/4W 1%, 100-pack (1 used) | 1 | 1.10 | 1.10 | AliExpress (TriArk Electronic Components Store) |
-| J1 | 0.96in 128x64 SSD1306 I2C OLED | 1 | 0.99 | 0.99 | AliExpress (DIY-Victor Store) |
+| R1 | 10k resistor (from a 300 pc 1/4W 1% metal film resistor kit, 1 used) | 1 | 4.05 | 4.05 | AliExpress (LXQY Store) |
+| J1 | 0.96in 128x64 SSD1306 I2C OLED | 1 | 2.37 | 2.37 | AliExpress (DIY-Victor Store) |
 | - | Groobie custom ghost PCB (`groobie.kicad_pcb`, gerbers in `gerbers/`) | 1 | TBD | TBD | PCB fab |
 | - | 3D printed case: tray, lid, logo and face inlays | 1 | TBD | TBD | Self-printed |
-| | **Parts subtotal (electronics only, before tax and shipping)** | | | **27.71** | |
+| | **Parts subtotal (electronics only)** | | | **30.88** | |
+| | **Shipping** (AliExpress, free) | | | **0.00** | |
+| | **Parts total including shipping** | | | **30.88** | |
 
 ## Wiring
 
