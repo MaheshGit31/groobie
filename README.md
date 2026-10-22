@@ -8,7 +8,7 @@ Your desktop pet that loves dancing 😎
 
 ### Groobie is your little friend that loves to dance. (and also encourages you to).
 
-A tiny ghost-shaped desk pet on a custom ghost PCB around a Seeed XIAO ESP32-C3, with a 0.96in OLED, an MPU6050 motion sensor, a DHT11 temperature/humidity sensor and two MX-style switches, in a 3D-printed case. He also reminds you to get up and move.
+A tiny ghost-shaped desk pet on a custom PCB created with a Seeed XIAO ESP32-C3, with a 0.96in OLED, an MPU6050 motion sensor, a DHT11 temperature/humidity sensor and two MX-style switches, in a 3D-printed case. He also reminds you to get up and move.
 
 # What does he look like?
 
@@ -35,12 +35,12 @@ his joy, energy and fullness stats are saved, so he remembers them after power-o
 
 | Control | What it does |
 |---|---|
-| **Button 1** (wired to D2) | Opens the radial menu. Press it again in the menu to confirm your choice. |
+| **Button 1** (wired to D2) | Opens the Menu. Press it again in the menu to confirm your choice. |
 | **Tilt Groobie** (while the menu is open) | The MPU6050 works like an air mouse. A ball on screen follows your tilt, and tilting toward a side highlights that action. |
 | **Button 2** (wired to D3) | Shows or hides the stats screen (joy, energy, fullness, temperature, humidity). It never changes Groobie, it only lets you peek. |
 | **Shake Groobie** (outside the menu) | Cheers him up (joy +5, energy -2, fullness -1) and wakes him if he is napping. |
 
-### The radial menu
+### The Menu
 
 Press Button 1, hold Groobie however is comfortable (the tilt is calibrated to how you hold
 him at that moment), tilt toward an action, then press Button 1 again to confirm.
@@ -59,11 +59,11 @@ while he sits on your desk.
 ### Move reminder
 
 Groobie's real job: if you have not touched or shaken him for **30 minutes**, he starts
-bouncing on the spot and shows a **MOVE!** speech bubble above his head. That is your cue
+bouncing on the spot and shows a **MOVE!** speech bubble above his head. That is your time
 to stand up, stretch or walk around. To say "ok, I moved", press either button or shake
 him, and the reminder resets for another 30 minutes. He does not nag while napping.
 
-To change the interval, edit `MOVE_REMINDER_MINUTES` in `Groobie.ino` (set it to 0 to turn
+To change the tme it takes before reminding, edit `MOVE_REMINDER_MINUTES` in `Groobie.ino` (set it to 0 to turn
 the reminder off).
 
 ## Bill of materials
@@ -97,14 +97,6 @@ Full list in [`bom.csv`](bom.csv).
 
 The OLED is at I2C address 0x3C and the MPU6050 at 0x68.
 
-## Building one
-
-1. Order the PCB from the gerbers in `gerbers/` and the parts from the BOM.
-2. Solder the XIAO, OLED, MPU6050, DHT11, resistor and the two switches.
-3. Open `Groobie.ino` in the Arduino IDE, install the Adafruit GFX, Adafruit SSD1306,
-   Adafruit MPU6050 and DHT sensor libraries, pick the XIAO ESP32-C3 board and upload.
-4. Print the case from `groobie_case.step` (tray, lid, then the colored logo, eye and blush pieces),
-   and fit the colored pieces onto the lid.
 
 ## Files
 
