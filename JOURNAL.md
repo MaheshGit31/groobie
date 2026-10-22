@@ -4,9 +4,9 @@
 <!-- Generated: 2026-10-09T00:05:14.106Z -->
 
 > [!NOTE]
-> This devlog is mirrored from [Half Life](https://halflife.hackclub.com). Editing it here will not change the platform's copy, and the next sync overwrites this file.
+> This devlog is mirrored from [Half Life](https://halflife.hackclub.com) – [open the project](https://halflife.hackclub.com/projects/cmuvo6oxb017y01o9j918i927). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
-> Your desktop pet that loves dancing 😎
+> A tiny ghost-shaped desk pet on a custom PCB created with a Seeed XIAO ESP32-C3, with a 0.96in OLED, an MPU6050 motion sensor, a DHT11 temperature/humidity sensor and two MX-style switches, in a 3D-printed case. He also reminds you to get up and move.
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
