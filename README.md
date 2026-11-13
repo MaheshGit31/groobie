@@ -8,7 +8,7 @@ Your desktop pet that loves dancing 😎
 
 ### Groobie is your little friend that loves to dance. (and also encourages you to).
 
-A tiny ghost-shaped desk pet on a custom PCB created with a Seeed XIAO ESP32-C3, with a 0.96in OLED, an MPU6050 motion sensor, a DHT11 temperature/humidity sensor and two MX-style switches, in a 3D-printed case. He also reminds you to get up and move.
+A tiny ghost-shaped desk pet on a custom ghost PCB around a Seeed XIAO ESP32-C3, with a 0.96in OLED, an MPU6050 motion sensor, a DHT11 temperature/humidity sensor and two MX-style switches, in a 3D-printed case. He also reminds you to get up and move.
 
 # What does he look like?
 
@@ -35,12 +35,12 @@ his joy, energy and fullness stats are saved, so he remembers them after power-o
 
 | Control | What it does |
 |---|---|
-| **Button 1** (wired to D2) | Opens the Menu. Press it again in the menu to confirm your choice. |
+| **Button 1** (wired to D2) | Opens the radial menu. Press it again in the menu to confirm your choice. |
 | **Tilt Groobie** (while the menu is open) | The MPU6050 works like an air mouse. A ball on screen follows your tilt, and tilting toward a side highlights that action. |
 | **Button 2** (wired to D3) | Shows or hides the stats screen (joy, energy, fullness, temperature, humidity). It never changes Groobie, it only lets you peek. |
 | **Shake Groobie** (outside the menu) | Cheers him up (joy +5, energy -2, fullness -1) and wakes him if he is napping. |
 
-### The Menu
+### The radial menu
 
 Press Button 1, hold Groobie however is comfortable (the tilt is calibrated to how you hold
 him at that moment), tilt toward an action, then press Button 1 again to confirm.
@@ -59,11 +59,11 @@ while he sits on your desk.
 ### Move reminder
 
 Groobie's real job: if you have not touched or shaken him for **30 minutes**, he starts
-bouncing on the spot and shows a **MOVE!** speech bubble above his head. That is your time
+bouncing on the spot and shows a **MOVE!** speech bubble above his head. That is your cue
 to stand up, stretch or walk around. To say "ok, I moved", press either button or shake
 him, and the reminder resets for another 30 minutes. He does not nag while napping.
 
-To change the tme it takes before reminding, edit `MOVE_REMINDER_MINUTES` in `Groobie.ino` (set it to 0 to turn
+To change the interval, edit `MOVE_REMINDER_MINUTES` in `Groobie.ino` (set it to 0 to turn
 the reminder off).
 
 ## Bill of materials
@@ -72,18 +72,17 @@ Full list in [`bom.csv`](bom.csv).
 
 | Ref | Part | Qty | Unit (USD) | Total (USD) | Vendor |
 |---|---|---|---|---|---|
-| U2 | Seeed Studio XIAO ESP32-C3 | 1 | 15.99 | 15.99 | AliExpress (FMchip AE Store) |
-| J2 | MPU6050 GY-521 accel/gyro breakout | 1 | 3.85 | 3.85 | AliExpress (Nextronics Store) |
-| - | MX keycaps, 10-pack blank 1U (2 used, optional) | 1 | 1.09 | 1.09 | AliExpress (SZElectronic Store) |
-| SW1, SW2 | Outemu 3-pin MX switch, red, 10-pack (2 used) | 1 | 2.39 | 2.39 | AliExpress (SZ suhv Store) |
-| U1 | DHT11 temperature and humidity sensor | 1 | 1.14 | 1.14 | AliExpress (Simple Robot Store) |
-| R1 | 10k resistor (from a 300 pc 1/4W 1% metal film resistor kit, 1 used) | 1 | 4.05 | 4.05 | AliExpress (LXQY Store) |
-| J1 | 0.96in 128x64 SSD1306 I2C OLED | 1 | 2.37 | 2.37 | AliExpress (DIY-Victor Store) |
+| U2 | Seeed Studio XIAO ESP32-C3 | 1 | 13.89 | 13.89 | AliExpress (FMchip AE Store) |
+| J2 | MPU6050 GY-521 accel/gyro breakout | 1 | 3.33 | 3.33 | AliExpress (Nextronics Store) |
+| SW1, SW2 | Outemu 3-pin MX switch, red, 10-pack (2 used) | 1 | 1.09 | 1.09 | AliExpress (SZ suhv Store) |
+| U1 | DHT11 temperature and humidity sensor | 1 | 1.05 | 1.05 | AliExpress (Simple Robot Store) |
+| R1 | 10k resistor, 1/4W 1%, 100-pack (1 used) | 1 | 1.45 | 1.45 | AliExpress (TriArk Electronic Components Store) |
+| J1 | 0.96in 128x64 SSD1306 I2C OLED | 1 | 2.49 | 2.49 | AliExpress (DIY-Victor Store) |
 | - | Groobie custom ghost PCB (`groobie.kicad_pcb`, gerbers in `gerbers/`) | 1 | TBD | TBD | PCB fab |
 | - | 3D printed case: tray, lid, logo and face inlays | 1 | TBD | TBD | Self-printed |
-| | **Parts subtotal (electronics only)** | | | **30.88** | |
-| | **Shipping** (AliExpress, free) | | | **0.00** | |
-| | **Parts total including shipping** | | | **30.88** | |
+| | **Parts subtotal (electronics only)** | | | **23.30** | |
+| | **Shipping and tax** (DHT11 seller ships separately, rest free) | | | **7.71** | |
+| | **Parts total paid on AliExpress (one order, 6 items)** | | | **31.01** | |
 
 ## Wiring
 
@@ -97,6 +96,14 @@ Full list in [`bom.csv`](bom.csv).
 
 The OLED is at I2C address 0x3C and the MPU6050 at 0x68.
 
+## Building one
+
+1. Order the PCB from the gerbers in `gerbers/` and the parts from the BOM.
+2. Solder the XIAO, OLED, MPU6050, DHT11, resistor and the two switches.
+3. Open `Groobie.ino` in the Arduino IDE, install the Adafruit GFX, Adafruit SSD1306,
+   Adafruit MPU6050 and DHT sensor libraries, pick the XIAO ESP32-C3 board and upload.
+4. Print the case from `groobie_case.step` (tray, lid, then the colored logo, eye and blush pieces),
+   and fit the colored pieces onto the lid.
 
 ## Files
 
